@@ -1,0 +1,15 @@
+.git
+.github
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.env
+*.env
+terraform/
+k8s/
+docs/
+README.md
+Makefile
+docker-compose*.yml

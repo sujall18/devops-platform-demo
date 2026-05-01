@@ -1,0 +1,8 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# Never commit terraform.tfvars — it contains your IP and key name.
+
+aws_region    = "us-east-1"
+environment   = "dev"
+instance_type = "t2.micro"
+key_name      = "my-keypair"       # name of the key pair in AWS Console
+my_ip_cidr    = "203.0.113.10/32"  # replace with your public IP

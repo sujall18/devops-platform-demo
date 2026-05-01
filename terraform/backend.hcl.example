@@ -1,0 +1,8 @@
+# Copy to backend.hcl and fill in. Run: terraform init -backend-config=backend.hcl
+# Never commit backend.hcl — it references your account-specific bucket name.
+
+bucket         = "devops-platform-demo-tfstate-<your-account-id>"
+key            = "devops-platform-demo/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "devops-platform-demo-tflock"
+encrypt        = true
