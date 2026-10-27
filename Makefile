@@ -6,7 +6,7 @@ REGISTRY   ?= ghcr.io/$(shell git config user.name | tr '[:upper:]' '[:lower:]' 
 
 ## Start local dev environment (Flask + PostgreSQL + pgAdmin)
 dev:
-	docker compose up --build
+	docker-compose up --build
 
 ## Stop and remove local dev containers and volumes
 down:
@@ -23,7 +23,7 @@ push: build
 
 ## Run tests (requires running db or uses sqlite in-memory via conftest)
 test:
-	cd app && python -m pytest tests/ -v
+	cd app && python3 -m pytest tests/ -v
 
 ## Lint Python source
 lint:

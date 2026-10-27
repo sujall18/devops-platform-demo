@@ -2,8 +2,9 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
-.env
+.env.example
 *.env
+.venv
 
 # Terraform
 terraform/.terraform/
