@@ -23,7 +23,7 @@ spec:
       containers:
         - name: task-tracker
           # Updated automatically by cd.yml via sed on each deploy
-          image: ghcr.io/sujall18/task-tracker-api:sha-a52757b
+          image: ghcr.io/sujall18/task-tracker-api:sha-d2bebe4
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
